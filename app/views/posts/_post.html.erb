@@ -1,0 +1,9 @@
+<p>
+  <strong>Title:</strong>
+  <%= link_to_unless_current post.title, post %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= simple_format(post.body, {class: 'post'},  wrapper_tag: "div") %>
+</p>
